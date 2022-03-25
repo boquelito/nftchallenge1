@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    background-color:hsl(217, 54%, 11%);
+}
+
+.carte {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 23px 49px 7px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 0px 23px 49px 7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 23px 49px 7px rgba(0,0,0,0.43);
+}
+.cube{
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pardessus {
+    background-color: hsla(178, 100%, 50%, 0.603);
+    width: 260px;
+    height: 260px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+}
+
+.oeil{
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.titre {
+    font-size: 18px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 57%;
+    left: 20px;
+    font-stretch:ultra-expanded;
+}
+
+.paragraphe{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    position: absolute;
+    top: 64%;
+    left: 20px;
+    color: hsl(215, 51%, 70%);
+}
+
+ul{
+    display: flex;
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    padding-left: 20px;
+}
+
+li1{
+    display: inline;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    color: hsl(178, 100%, 50%);
+    font-size: 13px;
+    margin-right: 66px;
+}
+
+li2{
+    display: inline;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+}
+
+.eth{
+    position: absolute;
+    display: flex;
+    bottom: 16%;
+    left: 35px;
+    margin: 0;
+}
+
+.horloge{
+    position: absolute;
+    display: flex;
+    bottom: 22%;
+    right:40px;
+    margin: 0;
+}
+
+.ligne {
+    width: 260px;
+    position: absolute;
+    left: 20px;
+    border:solid 0.0000001px hsl(215, 51%, 70%);
+    top: 85%;
+}
+
+.man{
+    border-radius: 60%;
+    height: 30px;
+    width: 30px;
+    border:white 2px solid;
+    background-image:url(/Users/louisboquel/Desktop/images/image-avatar.png);
+    position: absolute;
+    left: 20px;
+    top: 89%;
+}
+
+.photo{
+    border-radius: 80%;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size:inherit;
+}
+
+.creation{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+    position: absolute;
+    top: 90.5%;
+    left:70px;
+    margin: 0;
+}
+
+span{
+    color: white;
+}
+
+span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.titre:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.cube:hover.pardessus{
+    visibility: visible;
+}
+
+.pardessus:hover{
+    opacity: 1;
+    transition: all .3s ease;
+}
